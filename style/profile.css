@@ -1,0 +1,260 @@
+@import url('./partial/information.css');
+@import url('./partial/reset.css');
+@import url('./partial/nav.css');
+
+main {
+  background: linear-gradient(225deg, #C9DFFC, #F8ECFA 60%);
+  padding: 4em 0 0;
+}
+
+.back {
+  margin-top: 4em;
+  display: block;
+}
+
+.profile {
+  padding: 3em 1.3em 0;
+}
+
+.picture {
+  max-width: 16em;
+}
+
+.picture .icon {
+  display: flex;
+  align-items: center;
+}
+
+.change-picture .background {
+  background: #D3DFFD;
+  margin: 1em 0;
+  padding: 1em 0;
+}
+
+.change-picture .background img {
+  margin-top: 1em;
+  width: 16em;
+  height: 16em;
+}
+
+.change-picture .btn-choose {
+  background: #D3DFFD;
+  width: 100%;
+  padding: 0.8em 0;
+  font-size: 1.2rem;
+}
+
+.wrapper-bio .change-sandi {
+  margin-top: 1em;
+  width: 100%;
+  padding: 1em 0;
+  font-size: 1rem;
+  background-color: #D3DFFD;
+  transition: background-color .2s ease-in-out;
+}
+
+.change-picture .btn-choose:hover, .wrapper-bio .change-sandi:hover {
+  background-color: #D8ABC8;
+}
+
+.bio {
+  padding: 3em 0.5em 4em;
+  max-width: 18em;
+}
+
+.bio h1 {
+  font-size: 2em;
+}
+
+.wrapper-bio {
+  margin: 0.8em 0;
+}
+
+.wrapper-bio span {
+  display: block;
+}
+
+.change-name, .change-hp {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+
+.change-name span:nth-child(2), .change-hp span:nth-child(2) {
+  order: 2;
+} 
+
+.change-name button, .change-hp button {
+  order: 1;
+  justify-self: end;
+  background-color: transparent;
+  color: #414A60;
+  transition: color .3s ease-in;
+}
+
+.change-name button:hover, .change-hp button:hover {
+  color: #D8ABC8;
+}
+
+.gender,.email {
+  margin: 1em 0;
+}
+
+
+.item-user {
+  padding-bottom: 2em;
+}
+
+.item-user h1{
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.items-user {
+  margin-top: 1em;
+}
+
+.items-user .item {
+  display: flex;
+  align-items: center;
+  margin: 2em 0 0;
+  column-gap: 0.8em;
+}
+
+.items-user .item img {
+  max-width: 8em;
+  height: auto;
+}
+
+.items-user .item-text .name-product{
+  font-size: 1.1rem;
+}
+
+.items-user .item-text h4 {
+  font-size: 1.4rem;
+}
+
+.items-user .item-text .branch-product {
+  font-size: 0.8rem;
+}
+
+.items-user .item-text .progress-item {
+  margin-top: .5rem;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: #8990D3;
+}
+
+@media screen and (min-width: 600px) {
+  .profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+  }
+
+  .wrapper {
+    gap: 0 1em;
+  }
+
+  .item-user {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .change-picture .background img {
+    height: 15em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .profile {
+    gap: 2em;
+    flex-direction: row;
+  }
+  .wrapper {
+    gap: 0 2em;
+  }
+
+  .bio h1 {
+    font-size: 1.8rem;
+  }
+  .item-user {
+    background-color: rgba(248,243,243,0.5);
+    padding: 2em;
+    border-radius: 50px;
+  }
+  .item-user h1{
+    font-size: 1.4rem;
+  }
+  .items-user {
+    margin-top: 1em;
+  }
+  .items-user .item img {
+    max-width: 6em;
+  }
+  .items-user .item-text .name-product{
+    font-size: 0.8rem;
+  }
+  .items-user .item-text h4 {
+    font-size: 1rem;
+  }
+  .items-user .item-text .branch-product {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .profile {
+    padding: 4em 0 2em;
+  }
+  .bio {
+    margin-left: 3em;
+    max-width: 22em;
+  }
+
+  .item-user {
+    padding: 2.5em 3em;
+  }
+  
+  .items-user .item img {
+    max-width: 8em;
+  }
+
+  .items-user .item-text .name-product{
+    font-size: 1.2rem;
+  }
+  .items-user .item-text h4 {
+    font-size: 1.4rem;
+  }
+  .items-user .item-text .branch-product {
+    font-size: 0.8rem;
+  }
+
+  .items-user .item-text .progress-item {
+    font-size: 1rem;
+  }
+
+  .wrapper-bio span {
+    display: inline-block;
+  }
+
+  .wrapper-bio .email {
+    gap: 0 4.5em;
+  }
+
+  .change-name span:nth-child(2), .change-hp span:nth-child(2) {
+    order: 1;
+  } 
+  
+  .change-name button, .change-hp button {
+    order: 2;
+  }
+  .wrapper-bio .change-name, .wrapper-bio .gender, .wrapper-bio .change-hp,.wrapper-bio .email  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
